@@ -1,23 +1,23 @@
-function setLocalLinks(){
+function setLocaleLinks(){
 
-   var url = window.location.href;  
-   var locales = ["en", "es", "ca"];
+   var url = window.location.href;
+   var locales = ["en", "es"];
 
    for(var i=0; i < locales.length; i++){
-      var a = document.getElementById(locales[i] + '-locale-link'); //or grab it by tagname etc
+      var $link = $("." + locales[i] + '-locale-link'); //or grab it by tagname etc
 
-      var localeUrl = url
+      var localeUrl = url;
       if(url.includes('lang=')){
-         localeUrl = url.replace(/lang=en|lang=es|lang=ca/gi, "lang=" + locales[i]);   
+         localeUrl = url.replace(/lang=en|lang=es|lang=ca/gi, "lang=" + locales[i]);
       } else {
          if(url.includes('?')){
-            localeUrl = localeUrl + "&lang=" + locales[i];      
+            localeUrl = localeUrl + "&lang=" + locales[i];
          } else {
-            localeUrl = localeUrl + "?lang=" + locales[i];      
+            localeUrl = localeUrl + "?lang=" + locales[i];
          }
       }
-      a.href = localeUrl;
+      $link.attr('href', localeUrl);
    }
 }
 
-setLocalLinks();
+setLocaleLinks();

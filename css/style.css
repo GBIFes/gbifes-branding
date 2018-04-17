@@ -218,7 +218,7 @@ input[type=email], input[type=file], input[type=number], input[type=password], i
     color: #000000;
     border: none;
     padding: 0px 10px;
-    padding-bottom: 19px;
+    /*padding-bottom: 19px;*/
     padding-left: 0;
     border-bottom: 2px solid #eeeeee;
     margin: 0;

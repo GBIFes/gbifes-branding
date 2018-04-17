@@ -1,13 +1,3 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56381349-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-56381349-1');
-</script>
-
 <header id="masthead" class="site-header">
    <div id="topheader" class="container">
       <div class="site-branding">
@@ -18,7 +8,7 @@
       <!-- .site-branding -->
       <div class="head-links">
          <ul>
-            <li><a href="http://datos.gbif.es/" target="_blank" class="arrow-link">Portal de datos</a></li>
+            <li><a href="http://datos.gbif.es/" target="_blank" class="arrow-link" id="top_menu_dataportal"></a></li>
             <li><a href="http://ipt.gbif.es/" target="_blank" class="arrow-link">IPT</a></li>
             <li><a href="http://natusfera.gbif.es/" target="_blank" class="arrow-link">Natusfera</a></li>
             <li><a href="http://elearning.gbif.es/" target="_blank" class="arrow-link">eLearning</a></li>
@@ -28,11 +18,11 @@
       </div>
       <!-- .head-links -->
       <span class="lupa_responsive"></span>
-      <div class="searchbox">
+      <div class="searchbox hide">
          <form role="search" method="get" class="search-form" action="http://www.gbif.es/">
             <label>
             <span class="screen-reader-text">Buscar:</span>
-            <input type="search" class="search-field" placeholder="Buscar &hellip;" value="" name="s" />
+            <input type="search" class="search-field" id="banner_search_input" placeholder="" value="" name="s" />
             </label>
             <input type="submit" class="search-submit" value="Buscar" />
          </form>
@@ -43,14 +33,11 @@
          <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
             <ul>
                <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
-                  <a id="en-locale-link" href=""><span class="wpml-ls-display">EN</span></a>
+                  <a class="en-locale-link" href=""><span class="wpml-ls-display lang_link_en">EN</span></a>
                </li>
                <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-                  <a id="es-locale-link" href=""><span class="wpml-ls-native">ES</span></a>
+                  <a class="es-locale-link" href=""><span class="wpml-ls-native lang_link_es">ES</span></a>
                </li>
-               <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-                  <a id="ca-locale-link" href=""><span class="wpml-ls-native">CA</span></a>
-               </li>               
             </ul>
          </div>
       </div>
@@ -73,16 +60,16 @@
    <div id="bs-navbar-collapse-1" class="collapse navbar-collapse">
       <div class="menu-principal-container">
          <ul id="menu-principal" class="navbar-nav">
-            <li id="menu-item-290" class="menu-item hidemobile" style="text-align:left; color: #36de97; font-weight: bold; padding-right:20px;padding-left:30px">
-                  Portal Nacional <br/>
-                  de Datos de Biodiversidad               
+            <li id="menu-item-290" class="menu-item hidemobile" style="text-align:left; color:#3a67a1; font-weight: bold; padding-right:20px;padding-left:30px; padding-bottom:0px;">
+                  <span id="menu_portal_part1">Portal Nacional</span><br/>
+                  <span id="menu_portal_part2">de Datos de Biodiversidad</span>               
             </li>
-            <li id="menu-item-290" class="menu-item"><a href="http://auth.gbif.es">Home</a></li>
-            <li id="menu-item-290" class="menu-item"><a href="http://colecciones.gbif.es">Instituciones, colecciones y proyectos</a></li>
-            <li id="menu-item-308" class="menu-item"><a href="http://colecciones.gbif.es/datasets ">Juegos de datos</a></li>
-            <li id="menu-item-307" class="menu-item"><a href="http://registros.gbif.es">Buscador</a></li>
-            <li id="menu-item-306" class="menu-item"><a href="http://registros.gbif.es/explore/your-area/">Explora tu área</a></li>
-            <li id="menu-item-305" class="menu-item"><a href="http://regiones.gbif.es">Regiones</a></li>
+            <li id="menu-item-290" class="menu-item top-nav-menu"><a href="http://auth.gbif.es">Home</a></li>
+            <li id="menu-item-290" class="menu-item top-nav-menu"><a href="http://colecciones.gbif.es" id="menu_collections">  </a></li>
+            <li id="menu-item-308" class="menu-item top-nav-menu"><a href="http://colecciones.gbif.es/datasets" id="menu_datasets"> </a></li>
+            <li id="menu-item-307" class="menu-item top-nav-menu"><a href="http://registros.gbif.es" id="menu_search"> </a></li>
+            <li id="menu-item-306" class="menu-item top-nav-menu"><a href="http://registros.gbif.es/explore/your-area/" id="menu_explore"> </a></li>
+            <li id="menu-item-305" class="menu-item top-nav-menu"><a href="http://regiones.gbif.es" id="menu_regions"> </a></li>
          </ul>
       </div>                  
       <div class="head-links-responsive">

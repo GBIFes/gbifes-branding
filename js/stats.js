@@ -1,21 +1,18 @@
 function loadStats(){
-
    $.getJSON("http://registros-ws.gbif.es/occurrences/search?pageSize=0", function( data ) {
-      $('#number_registros').html(addPeriods(data.totalRecords));
+      $('#number_registros').html(addPeriods(data.totalRecords)).addClass('loaded_stats');
    });
 
    $.getJSON("http://colecciones.gbif.es/ws/institution", function( data ) {
-      $('#number_instituciones').html(data.length);
+      $('#number_instituciones').html(data.length).addClass('loaded_stats');
    });
 
    $.getJSON("http://colecciones.gbif.es/ws/dataResource", function( data ) {
-      $('#number_bases').html(data.length);
+      $('#number_bases').html(data.length).addClass('loaded_stats');
    }); 
 }
 
-
-function addPeriods(nStr)
-{
+function addPeriods(nStr){
     nStr += '';
     x = nStr.split('.');
     x1 = x[0];
