@@ -1,4 +1,5 @@
 function loadStats(){
+
    $.getJSON("http://registros-ws.gbif.es/occurrences/search?pageSize=0", function( data ) {
       $('#number_registros').html(addPeriods(data.totalRecords)).addClass('loaded_stats');
    });
@@ -12,7 +13,9 @@ function loadStats(){
    }); 
 }
 
-function addPeriods(nStr){
+
+function addPeriods(nStr)
+{
     nStr += '';
     x = nStr.split('.');
     x1 = x[0];

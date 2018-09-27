@@ -1205,7 +1205,7 @@ footer .foot_block5 ul {
 footer .foot_block5 ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 18px;
+    margin: 0 25px;
 }
 .hashtag {
     color: #36de97!important;
@@ -5348,3 +5348,27 @@ footer nav ul li {
     width: 18.65555555%}
 }
 
+
+h1, h2, h3 {
+    font-family: "Galano-Grotesque",  sans-serif;
+    font-size: 35px;
+    color: #36de97;
+    font-weight: bold;
+
+}
+
+section#breadcrumb {
+   background-color: #FFF; 
+   font-weight:600;
+   font-size:0.875em;
+}
+
+section#breadcrumb li {
+
+padding-right: 15px;
+border-right: #f7f7f7 solid 2px;
+}
+
+section#breadcrumb li + li::before {
+content:'';
+}

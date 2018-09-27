@@ -19,7 +19,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area parent_homepage">
 		<main id="main" class="site-main">
-			<div class="page_header primarygreen" style="background-image: url(http://auth.gbif.es/images/Banner_Portal_no_text.png)">
+			<div class="page_header primarygreen" style="background-image: url(http://datos.gbif.es/images/Banner_Portal_no_text.png)">
 				<h1 id="main_title_label"></h1>
 			</div>
 			<section class="banner_numbers container">
@@ -129,7 +129,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 </div>
 <!-- end of main content -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="http://auth.gbif.es/js/jquery.i18n.properties.js" type="text/javascript"></script>
+<script src="http://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript"></script>
 
 <?php include 'footer.html';?>
 
@@ -174,7 +174,8 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/stats.js" type="text/javascript"></script>
 <script>
-loadStats();
+   loadStats();
 </script>
 </html>
+
 

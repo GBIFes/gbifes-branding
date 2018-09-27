@@ -504,3 +504,4 @@
         return codes.reduce(function (acc, val) { return acc + String.fromCharCode(val); }, '');
     }
 }) (jQuery);
+
