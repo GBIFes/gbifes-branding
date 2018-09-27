@@ -5348,12 +5348,3 @@ footer nav ul li {
     width: 18.65555555%}
 }
 
-/* underscore in selected langs */
-header#masthead #topheader .langbox ul li.wpml-ls-current-language a span:before {
-    content: "";    
-    background: #3a67a1; /* #36de97; */    
-    display: block;   
-    padding-bottom:2px;
-    position: relative;
-    bottom: -18px;
-}

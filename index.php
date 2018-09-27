@@ -6,7 +6,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
     <meta name="author" content="Portal de Datos GBIF.ES">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de datos de GBIF.ES</title>
-    <link href="https://www.gbif.es/wp-content/uploads/2017/05/favicon-gbif.png" rel="shortcut icon"  type="image/x-icon"/>
+    <link href="http://www.gbif.es/wp-content/uploads/2017/05/favicon-gbif.png" rel="shortcut icon"  type="image/x-icon"/>
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen, print" />	
 	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen, print" />	
 	<?php include 'head.html';?>
@@ -19,16 +19,16 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area parent_homepage">
 		<main id="main" class="site-main">
-			<div class="page_header primarygreen" style="background-image: url(https://datos.gbif.es/images/Banner_Portal_no_text.png)">
+			<div class="page_header primarygreen" style="background-image: url(http://datos.gbif.es/images/Banner_Portal_no_text.png)">
 				<h1 id="main_title_label"></h1>
 			</div>
 			<section class="banner_numbers container">
 				<div class="buscador">
 					<div class="container">
-						<form action="https://registros.gbif.es/occurrences/search" method="get">
+						<form action="http://registros.gbif.es/occurrences/search" method="get">
 							<a class="hiddenmobile" 
 								id="advanced_search_link"
-								href="https://registros.gbif.es/#tab_advanceSearch">
+								href="http://registros.gbif.es/#tab_advanceSearch">
 								<span id="search_input_advanced1">Búsqueda</span><br/>
 								<span id="search_input_advanced2">Avanzada</span>
 							</a> 
@@ -45,24 +45,24 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 					<div class="numbers">
 						<div class="number">
 							<div class="number_nro" >
-								<a href="https://registros.gbif.es/occurrences/search" id="number_registros" style="text-decoration:none;" class="portal-link loading_stats">
-									25.930.000
+								<a href="http://registros.gbif.es/occurrences/search" id="number_registros" style="text-decoration:none;" class="portal-link loading_stats">
+									20.000.000
 								</a>
 							</div>
 							<div class="number_text" id="numbers_occurrences_label">registros</div>
 						</div>
 						<div class="number">
 							<div class="number_nro">
-								<a href="https://colecciones.gbif.es/datasets" id="number_bases" style="text-decoration:none;"  class="portal-link loading_stats">
-									290
+								<a href="http://colecciones.gbif.es/datasets" id="number_bases" style="text-decoration:none;"  class="portal-link loading_stats">
+									200
 								</a>
 							</div>
 							<div class="number_text" id="numbers_datasets_label">bases de datos</div>
 						</div>
 						<div class="number">
 							<div class="number_nro">
-								<a href="https://colecciones.gbif.es" id="number_instituciones" style="text-decoration:none;"  class="portal-link loading_stats">
-									90
+								<a href="http://colecciones.gbif.es" id="number_instituciones" style="text-decoration:none;"  class="portal-link loading_stats">
+									80
 								</a>		
 							</div>
 							<div class="number_text" id="numbers_institutions_label">instituciones</div>
@@ -74,7 +74,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 				<div class="container">
 					<div class="row fv_list">
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="https://colecciones.gbif.es" target="_self">
+							<a class="enlace portal-link " href="http://colecciones.gbif.es" target="_self">
 								<figure>
 									<img src="images/Bandeja.svg" alt="Comparte" class="style-svg">
 								</figure>
@@ -86,7 +86,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="https://colecciones.gbif.es/datasets" target="_self">
+							<a class="enlace portal-link " href="http://colecciones.gbif.es/datasets" target="_self">
 								<figure>
 									<img src="images/Etiqueta.svg" alt="Explora" class="style-svg">
 								</figure>
@@ -98,7 +98,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="https://registros.gbif.es/explore/your-area" target="_self">
+							<a class="enlace portal-link " href="http://registros.gbif.es/explore/your-area" target="_self">
 								<figure>
 									<img src="images/Prismaticos.svg" alt="Gestiona" class="style-svg">
 								</figure>
@@ -109,7 +109,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link" href="https://regiones.gbif.es" target="_self">
+							<a class="enlace portal-link" href="http://regiones.gbif.es" target="_self">
 								<figure>
 									<img src="images/Globo.svg" alt="Regiones" class="style-svg">
 								</figure>
@@ -129,6 +129,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 </div>
 <!-- end of main content -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="http://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript"></script>
 
 <?php include 'footer.html';?>
 
@@ -168,14 +169,12 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 .fv_item { margin-top: 20px;}
 </style>
 
-<script src="https://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript" defer></script>
-<script src="js/bootstrap.min.js" type="text/javascript" defer></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.i18n.properties.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/stats.js" type="text/javascript"></script>
 <script>
-  $(document).ready(function(){
-    if (gbifesjs.isDevel) console.log('jQuery ready');
-    loadStats();
-  });  
+   loadStats();
 </script>
 </html>
 
