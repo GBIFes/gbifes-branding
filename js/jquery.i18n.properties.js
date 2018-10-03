@@ -268,15 +268,23 @@
             }
         }
 
-        if (value.length === 0) {
+	// https://github.com/jquery-i18n-properties/jquery-i18n-properties/issues/72
+        if (value && value.length === 0) {
             return "";
         }
-        if (value.length == 1 && typeof(value[0]) == "string") {
+        if (value && value.length == 1 && typeof(value[0]) == "string") {
             return value[0];
         }
+	if (!value) {
+	    if (gbifesjs.isDevel) console.log(`missing i18 key: ${key}`);
+	}
 
         var str = "";
-        for (i = 0, j = value.length; i < j; i++) {
+	var len = 0;
+	if (value){
+	    len = value.length;
+	}
+        for (i = 0, j = len; i < j; i++) {
             if (typeof(value[i]) == "string") {
                 str += value[i];
             } else if (phvList && value[i] < phvList.length) {
