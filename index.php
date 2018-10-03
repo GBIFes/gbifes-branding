@@ -6,7 +6,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
     <meta name="author" content="Portal de Datos GBIF.ES">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de datos de GBIF.ES</title>
-    <link href="http://www.gbif.es/wp-content/uploads/2017/05/favicon-gbif.png" rel="shortcut icon"  type="image/x-icon"/>
+    <link href="https://www.gbif.es/wp-content/uploads/2017/05/favicon-gbif.png" rel="shortcut icon"  type="image/x-icon"/>
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen, print" />	
 	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen, print" />	
 	<?php include 'head.html';?>
@@ -19,13 +19,13 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area parent_homepage">
 		<main id="main" class="site-main">
-			<div class="page_header primarygreen" style="background-image: url(http://datos.gbif.es/images/Banner_Portal_no_text.png)">
+			<div class="page_header primarygreen" style="background-image: url(https://datos.gbif.es/images/Banner_Portal_no_text.png)">
 				<h1 id="main_title_label"></h1>
 			</div>
 			<section class="banner_numbers container">
 				<div class="buscador">
 					<div class="container">
-						<form action="http://registros.gbif.es/occurrences/search" method="get">
+						<form action="https://registros.gbif.es/occurrences/search" method="get">
 							<a class="hiddenmobile" 
 								id="advanced_search_link"
 								href="http://registros.gbif.es/#tab_advanceSearch">
@@ -129,7 +129,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 </div>
 <!-- end of main content -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="http://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript"></script>
+<script src="https://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript"></script>
 
 <?php include 'footer.html';?>
 
@@ -170,7 +170,6 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 </style>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="js/jquery.i18n.properties.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/stats.js" type="text/javascript"></script>
 <script>
