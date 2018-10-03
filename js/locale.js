@@ -1,7 +1,7 @@
 function setLocaleLinks(){
 
    var url = window.location.href;
-   var locales = ["en", "es"];
+   var locales = ["en", "es", "ca"];
 
    for(var i=0; i < locales.length; i++){
       var $link = $("." + locales[i] + '-locale-link'); //or grab it by tagname etc
