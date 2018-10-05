@@ -16,6 +16,15 @@ function i18n_menus(){
 	locale = navigator.language.substring(0,2);
     }
 
+    if (gbifesjs.isDevel) console.log(`Initial locale: ${locale}`);
+    
+    var enabledLangs = ["es", "en", "ca"];
+    var isValid = (enabledLangs.indexOf(locale) > -1);
+    if (!isValid) {
+	locale = "es";
+	localStorage.setItem("locale", locale);	
+    }
+
     if(locale){
 	$(".top-nav-menu a, .portal-link").each(function() {
 	    var $this = $(this);       
