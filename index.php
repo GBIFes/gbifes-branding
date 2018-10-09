@@ -28,7 +28,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						<form action="https://registros.gbif.es/occurrences/search" method="get">
 							<a class="hiddenmobile" 
 								id="advanced_search_link"
-								href="http://registros.gbif.es/#tab_advanceSearch">
+								href="https://registros.gbif.es/#tab_advanceSearch">
 								<span id="search_input_advanced1">Búsqueda</span><br/>
 								<span id="search_input_advanced2">Avanzada</span>
 							</a> 
@@ -45,7 +45,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 					<div class="numbers">
 						<div class="number">
 							<div class="number_nro" >
-								<a href="http://registros.gbif.es/occurrences/search" id="number_registros" style="text-decoration:none;" class="portal-link loading_stats">
+								<a href="https://registros.gbif.es/occurrences/search" id="number_registros" style="text-decoration:none;" class="portal-link loading_stats">
 									20.000.000
 								</a>
 							</div>
@@ -53,7 +53,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						</div>
 						<div class="number">
 							<div class="number_nro">
-								<a href="http://colecciones.gbif.es/datasets" id="number_bases" style="text-decoration:none;"  class="portal-link loading_stats">
+								<a href="https://colecciones.gbif.es/datasets" id="number_bases" style="text-decoration:none;"  class="portal-link loading_stats">
 									200
 								</a>
 							</div>
@@ -61,7 +61,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						</div>
 						<div class="number">
 							<div class="number_nro">
-								<a href="http://colecciones.gbif.es" id="number_instituciones" style="text-decoration:none;"  class="portal-link loading_stats">
+								<a href="https://colecciones.gbif.es" id="number_instituciones" style="text-decoration:none;"  class="portal-link loading_stats">
 									80
 								</a>		
 							</div>
@@ -74,7 +74,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 				<div class="container">
 					<div class="row fv_list">
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="http://colecciones.gbif.es" target="_self">
+							<a class="enlace portal-link " href="https://colecciones.gbif.es" target="_self">
 								<figure>
 									<img src="images/Bandeja.svg" alt="Comparte" class="style-svg">
 								</figure>
@@ -86,7 +86,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="http://colecciones.gbif.es/datasets" target="_self">
+							<a class="enlace portal-link " href="https://colecciones.gbif.es/datasets" target="_self">
 								<figure>
 									<img src="images/Etiqueta.svg" alt="Explora" class="style-svg">
 								</figure>
@@ -98,7 +98,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link " href="http://registros.gbif.es/explore/your-area" target="_self">
+							<a class="enlace portal-link " href="https://registros.gbif.es/explore/your-area" target="_self">
 								<figure>
 									<img src="images/Prismaticos.svg" alt="Gestiona" class="style-svg">
 								</figure>
@@ -109,7 +109,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a>
 						</div>
 						<div class="col-sm-3 fv_item">
-							<a class="enlace portal-link" href="http://regiones.gbif.es" target="_self">
+							<a class="enlace portal-link" href="https://regiones.gbif.es" target="_self">
 								<figure>
 									<img src="images/Globo.svg" alt="Regiones" class="style-svg">
 								</figure>
