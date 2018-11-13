@@ -2,17 +2,15 @@
  * Simple function to internationalise menus and sections of the home page.
  */
 function i18n_menus(){
-
-    var locale = navigator.language.substring(0,2);
     var url = new URL(window.location.href);
-    var locale = url.searchParams.get("lang");
-    if(locale != null){
+    locale = url.searchParams.get("lang");
+    if (locale != null){
 	localStorage.setItem("locale", locale);
     } else {
 	locale = localStorage.getItem("locale");
     }
 
-    if(locale === undefined || locale == null){
+    if (locale === undefined || locale === null){
 	locale = navigator.language.substring(0,2);
     }
 
@@ -25,7 +23,7 @@ function i18n_menus(){
 	localStorage.setItem("locale", locale);	
     }
 
-    if(locale){
+    if (locale){
 	$(".top-nav-menu a, .portal-link").each(function() {
 	    var $this = $(this);       
 	    var _href = $this.attr("href"); 
