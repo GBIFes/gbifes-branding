@@ -3,33 +3,33 @@
  */
 
 
-var enabledLangs = ["es", "en", "ca"];
+const enabledLangs = ['es', 'en', 'ca'];
 
-var locale;
+let locale;
 
 function i18n_init() {
-    var url = new URL(window.location.href);
-    
-    locale = url.searchParams.get("lang");
+  const url = new URL(window.location.href);
 
-    if (locale != null){
-	localStorage.setItem("locale", locale);
-    } else {
-	locale = localStorage.getItem("locale");
-    }
+  locale = url.searchParams.get('lang');
 
-    if (locale === undefined || locale === null){
-	locale = navigator.language.substring(0,2);
-    }
+  if (locale != null) {
+    localStorage.setItem('locale', locale);
+  } else {
+    locale = localStorage.getItem('locale');
+  }
 
-    if (gbifesjs.isDevel) console.log(`Initial locale: ${locale}`);
-    
+  if (locale === undefined || locale === null) {
+    locale = navigator.language.substring(0, 2);
+  }
 
-    var isValid = (enabledLangs.indexOf(locale) > -1);
-    if (!isValid) {
-	locale = "es";
-	localStorage.setItem("locale", locale);	
-    }
+  if (gbifesjs.isDevel) console.log(`Initial locale: ${locale}`);
+
+
+  const isValid = (enabledLangs.indexOf(locale) > -1);
+  if (!isValid) {
+    locale = 'es';
+    localStorage.setItem('locale', locale);
+  }
 }
 
 i18n_init();
