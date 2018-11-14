@@ -46,7 +46,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						<div class="number">
 							<div class="number_nro" >
 								<a href="https://registros.gbif.es/occurrences/search" id="number_registros" style="text-decoration:none;" class="portal-link loading_stats">
-									20.000.000
+									25.930.000
 								</a>
 							</div>
 							<div class="number_text" id="numbers_occurrences_label">registros</div>
@@ -54,7 +54,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						<div class="number">
 							<div class="number_nro">
 								<a href="https://colecciones.gbif.es/datasets" id="number_bases" style="text-decoration:none;"  class="portal-link loading_stats">
-									200
+									290
 								</a>
 							</div>
 							<div class="number_text" id="numbers_datasets_label">bases de datos</div>
@@ -62,7 +62,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 						<div class="number">
 							<div class="number_nro">
 								<a href="https://colecciones.gbif.es" id="number_instituciones" style="text-decoration:none;"  class="portal-link loading_stats">
-									80
+									90
 								</a>		
 							</div>
 							<div class="number_text" id="numbers_institutions_label">instituciones</div>
@@ -174,7 +174,10 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/stats.js" type="text/javascript"></script>
 <script>
-   loadStats();
+  $(document).ready(function(){
+    if (gbifesjs.isDevel) console.log('jQuery ready');
+    loadStats();
+  });  
 </script>
 </html>
 
