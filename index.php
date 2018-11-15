@@ -168,7 +168,6 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 .fv_item { margin-top: 20px;}
 </style>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
 <script src="https://datos.gbif.es/js/jquery.i18n.properties.js" type="text/javascript" defer></script>
 <script src="js/bootstrap.min.js" type="text/javascript" defer></script>
 <script src="js/stats.js" type="text/javascript"></script>
