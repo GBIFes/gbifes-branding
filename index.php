@@ -25,7 +25,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 			<section class="banner_numbers container">
 				<div class="buscador">
 					<div class="container">
-						<form action="https://registros.gbif.es/occurrences/search" method="get">
+						<form action="https://registros.gbif.es/advancedSearch" method="get">
 							<a class="hiddenmobile" 
 								id="advanced_search_link"
 								href="https://registros.gbif.es/#tab_advanceSearch">
@@ -34,7 +34,7 @@ header('Content-Type: text/html; charset=utf8'); ?><!DOCTYPE html>
 							</a> 
 							<input type="search" id="main_search_input" 
 							placeholder="" 
-							name="q">						
+							name="text">
 							<input type="submit" name="submit" class="search-submit" id="main_search_submit">
 						</form>
 					
