@@ -84,6 +84,13 @@ ga('send', 'pageview');
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- End Google Analytics -->
 <!-- FIXME set here production url -->
+<script>
+(function() { // Scoping function to avoid globals
+  if (typeof jQuery.i18n === 'undefined') {
+    document.write('<script src="https://datos.gbif.es/js/jquery.i18n.properties.js"><\/script>');
+  }
+})();
+</script>
 <script src="https://datos.gbif.es/js/i18n_menus.js" type="text/javascript" defer></script>
 <script defer>
 $( document ).ready(function() {
