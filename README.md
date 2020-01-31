@@ -1,6 +1,6 @@
 # gbifes-branding
 
-**Deprecated**: See new: https://github.com/GBIFes/commonui-bs3-2019
+**Deprecated**: See new: https://github.com/GBIFes/gbifes-branding-es6
 
 Header and footer for GBIF ES Living Atlas components
 
